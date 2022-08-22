@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    title Library 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+            li #[a(href="/") Home]
+            li #[a(href="/login") login]
+            li #[a(href="/book") Search User]
+            li #[a(href="/pay") Update]
+            li #[a(href="/track") DeleteUser]
+            li #[a(href="/addbook") Add book]
+            li #[a(href="/sb") Search Book]
+    
+    section#introSection
+        div Library Data Management System 
+        div.small Manage Data Easily
+
+    section#missionSection
+        h2 Our Services
+        div.card
+            h3 Manage Books
+            div.card-box
+                div.card-img
+                    img(src="/static/img/fb.jfif")
+                div.card-content
+                    p <b><center>Easily Manage Books</center></b>
+        div.card
+            h3 Manage Users
+            div.card-box
+                div.card-img
+                    img(src="/static/img/users.png")
+                div.card-content
+                    p <b>Manage Users</b>
+        div.card
+            h3 Search Options
+            div.card-box
+                div.card-img
+                    img(src="/static/img/search.jfif")
+                div.card-content
+                    p <b>Search for a particular Book/User</b>
+
+    //- section#sponsorsSection
+    //-     h2 Our Sponsors
+    
+    footer#footer
+        | our footer here
+    script
+      include ../static/index.js

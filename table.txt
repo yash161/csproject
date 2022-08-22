@@ -1,0 +1,1 @@
+create table order_details(order_id int primary key not null AUTO_INCREMENT,username varchar(100), origin varchar(225),name varchar(225),destination varchar(255))
